@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset&grid.css">
+  <style>
+  .btn-more {
+  align-self: flex-end;
+  }
+  .btn-more {
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: 1px solid #FF8C2D;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.btn-more:before {
+  content: "more";
+  color: #FF8C2D;
+  transform: translateX(-35%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.btn-more:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("test.svg") 50% 50% no-repeat;
+  transition: transform 0.3s;
+}
+.btn-more:hover {
+  background: rgba(255, 195, 85, 0.5);
+  border-color: transparent;
+}
+.btn-more:hover:before {
+  opacity: 1;
+}
+.btn-more:hover:after {
+  transform: translateX(50%);
+}
+  </style>
+</head>
+<body>
+
+  <a class="btn-more"></a>
+  
+</body>
+</html>

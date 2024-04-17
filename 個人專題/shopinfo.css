@@ -1,0 +1,37 @@
+h2{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.shopinfo-group{
+    width: 1080px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+.locAndpic-TW{
+    position: relative;
+}
+.locinfo-TW{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-weight: bold;
+}
+.card{
+    margin: 30px 0px;
+}
+.locAndpic-JP{
+    position: relative;
+}
+.locinfo-JP{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-weight: bold;
+}
+.txt p{
+    padding: 30px;
+    font-weight: bold;
+}

@@ -1,0 +1,138 @@
+.commodityList-txt{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.commodityAndservice-card{
+    width: 200px;
+    margin: 20px 0px;
+}
+.commodityAndservice-card img{
+    width:100%;
+
+}
+.commodityAndservice{
+    display: flex;
+    flex-direction: column;
+}
+.commodityAndservice-card .txt{
+    background-color:#FDF6E7;
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px;
+}
+.commodityAndservice-card .pic{
+    height: 133.3333px;
+}
+.commodityList-toppart{
+    display: flex;
+    justify-content: space-around;
+}
+.commodityList-twocard-onebanner picture img{
+    width: 700px;
+    height: 490px;
+    margin-top: 200px;
+}
+.arrow {
+    border: solid black;
+    border-width: 0px 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+}
+.toRight{
+    border: 0px;
+    background-color: transparent;
+    margin: 25px;
+}
+.left {
+    transform: rotate(135deg);
+}
+.toLeft{
+    border: 0px;
+    background-color: transparent;
+    margin: 25px;
+}
+.timelimitmadrob-group{
+    display: flex;
+    justify-content: center;
+}
+.commodityAndservice-card{
+    margin: 25px;
+}
+.couponTitle{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.coupon{
+    display: block;
+    width: 300px;
+    padding: 0px 30px;
+}
+.coupon img{
+    width: 100%;
+    height: 100%;
+}
+.couponGroup{
+    width: 1080px;
+    margin-left: 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+.timelimitmadrob{
+    font-size: 40px;
+    text-align: center;
+}
+.btn-more {
+    align-self: flex-end;
+    }
+    .btn-more {
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.btn-more:before {
+    content: "more";
+    color: black;
+    transform: translateX(-35%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.btn-more:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("Arrow\ 1.png") 50% 50% no-repeat;
+    transition: transform 0.3s;
+}
+.btn-more:hover {
+    background: black
+    border-color:transparent;
+}
+.btn-more:hover:before {
+    opacity: 1;
+}
+.btn-more:hover:after {
+    transform: translateX(50%);
+}
+.btn-more{
+    margin-left: 1140px; 
+    margin-top: 20px;
+}

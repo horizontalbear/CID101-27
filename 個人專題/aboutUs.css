@@ -1,0 +1,33 @@
+.aboutUstxt{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.aboutUS-pic{
+    margin-left: 100px;
+}
+.aboutUS-pic img{
+    width: 600px;
+    height: 336px;
+}
+.aboutUS-txt{
+    background-color: rgba(217, 217, 217,.5);
+    border-radius: 20px;
+    padding: 15px;
+    width: 660px;
+    font-size: 16px;
+    position: absolute;
+    left: 480px;
+    bottom: 450px;
+}
+.rabbit2-1{
+    position: absolute;
+    top: 120px;
+    left: 250px;
+}
+.rabbit2-2{
+    position: absolute;
+    bottom: 350px;
+    left: 200px;
+}
