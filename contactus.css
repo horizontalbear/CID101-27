@@ -1,0 +1,79 @@
+.contactus-title{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+}
+input{
+    display: block;
+}
+.infoAndinput{
+    width: 1080px;
+    display: flex;
+    box-sizing: border-box;
+    margin-left: 100px;
+}
+.uselessword{
+    border-bottom: 2px solid black;
+    width: 525px;
+}
+.uselessword p{
+    letter-spacing: 10px;
+    padding: 10px;
+}
+.locgroup{
+    display: flex;
+    width: 350px;
+    margin: 20px;
+}
+.phonegroup{
+    display: flex;
+    width: 190px;
+    margin: 20px;
+}
+.emailgroup{
+    display: flex;
+    margin: 20px;
+}
+.locgroup picture{
+    margin-top:16px ;
+    margin-right: 10px;
+}
+.phonegroup picture{
+    margin-top:16px ;
+    margin-right: 10px;
+}
+.emailgroup picture{
+    margin-right: 10px;
+}
+.same{
+    width: 525px;
+    margin: 10px 0px;
+    margin-left: 15px;
+}
+.content-txt{
+    width: 525px;
+    margin: 10px 0px;
+    margin-left: 15px;
+    height: 140px;
+}
+.contactinfo{
+    margin-right: 15px;
+}
+.content-txt::-webkit-input-placeholder{
+    position:relative;
+    left: 0px;
+    bottom: 60px;
+}
+.varify{
+    margin-bottom: 15px;
+    margin-left: 15px;
+    height: 30px;
+}
+.comfirm{
+    margin-left: 487px;
+    height: 20px;
+}
+iframe{
+    margin:50px 0px 100px 100px
+    
+}
