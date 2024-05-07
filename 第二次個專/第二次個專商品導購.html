@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Purchase Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    margin: auto;
+}
+
+.product-image img {
+    width: 500px;
+    height: auto;
+    border: 1px solid #ddd;
+}
+
+.product-details {
+    margin-left: 20px;
+    max-width: 500px;
+}
+
+.product-details h1, .price, .description {
+    margin-top: 0;
+}
+
+.price {
+    font-size: 24px;
+    color: #E63946;
+}
+
+.description {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.purchase-info {
+    margin-top: 20px;
+}
+
+.purchase-info input[type="number"], .purchase-info button {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.purchase-info button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.purchase-info button:hover {
+    background-color: #003580;
+}
+.small{
+    width: 40px;
+    height: 40px;
+    margin: 15px 10px;
+}
+#smallPanel{
+    display: flex;
+    flex-direction: column;
+    
+}
+.product-image{
+    width: 90%;
+}
+@media (max-width: 767px) {
+    .product-container{
+        display: block;
+    }
+    #smallPanel{
+        flex-direction: row;
+    }
+    #smallPanel img{
+        width: 10%;
+        height: 10%;
+    }
+}
+@media (max-width: 767px) {
+    h1{
+        font-size: 24px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div>
+            <img class="product-image"  id="large" src="mizuno pro1-330330.png">
+        </div>
+        <div id="smallPanel">
+            <img src="mizuno pro1-330330.png" class="small"/>
+            <img src="mizunopro3-330330.png" class="small"/>
+            <img src="mizunopro4-330330.png" class="small"/>
+            <img src="mizunopro5-330330.png" class="small"/>
+            <img src="mizunopro6-330330.png" class="small"/>
+        </div>
+        <div class="product-details">
+            <h1>MIZUNO PRO Order</h1>
+            <p class="price">$17200</p>
+            <p class="description">Mizuno Pro系列棒球手套以其卓越性能和精湛工藝聞名於世。這款手套採用高級日本皮革製成，確保了無與倫比的耐用性和舒適感。經典的設計結合創新技術，如手套的超柔軟內裡和經過優化的指套結構，提供了卓越的手感和控制力。Mizuno Pro手套是專為嚴肅的球員設計，旨在提升球場上的表現，無論是在大聯盟還是周末聯賽中都能發揮出色。這款手套不僅代表了工藝的巔峰，更是每位野球運動員追求完美裝備的理想選擇。</p>
+            <div class="purchase-info">
+                <label for="quantity">數量:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                <button type="button">加入購物車</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const pricePerUnit = 17200; // 单价
+    const quantityInput = document.getElementById('quantity');
+    const priceDisplay = document.querySelector('.price'); // 使用querySelector来精确获取第一个.price元素
+
+    // 监听数量输入框的变化
+    quantityInput.addEventListener('input', function() {
+        const quantity = parseInt(this.value) || 0; // 获取当前输入的数量，如果无效则为0
+        const totalPrice = (quantity * pricePerUnit).toFixed(2); // 计算总价并保留两位小数
+        priceDisplay.textContent = `$${totalPrice}`; // 更新价格显示
+    });
+});
+
+
+
+
+
+
+function showLarge(e){
+	let small = e.target;
+	document.getElementById("large").src = small.src;
+}
+
+function init(){
+	
+	let smalls = document.querySelectorAll("#smallPanel img");
+	for(let i=0; i<smalls.length; i++){
+		smalls[i].onclick = showLarge;
+	}
+}
+
+window.addEventListener("load", init, false);
+</script>
+    </script>
+</body>
+</html>
